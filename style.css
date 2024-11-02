@@ -1,0 +1,67 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header {
+  width: 80%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  width: 50%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+
+  font-size: small;
+}
+
+main > *:nth-child(4n + 3),
+main > *:nth-child(4n + 4) {
+  background-color: lightgray; /* Style for even rows */
+}
+
+label {
+  padding: 3px;
+}
+
+main {
+  border: 1px solid gray;
+}
+
+main label:nth-child(odd) {
+  border-right: 1px solid gray;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
+.loading {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+
+#loadImg {
+  mix-blend-mode: multiply;
+  display: none;
+}
+
+#loadImg.show {
+  mix-blend-mode: multiply;
+  display: block;
+}

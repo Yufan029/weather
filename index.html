@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <form id="addressForm" action="">
+        <label for="address">Please input the location:</label>
+        <input type="text" id="address" required />
+        <input type="submit" id="submit" value="Go" />
+      </form>
+
+      <button id="location">Use My Location</button>
+    </header>
+
+    <main>
+      <label id="date">Date & time:</label>
+      <label id="dateEl"></label>
+      <label id="resolvedAddress">Resolved Address:</label>
+      <label id="resolvedAddressEl"></label>
+      <label id="conditions">Conditions:</label>
+      <label id="conditionsEl"></label>
+      <label id="temp">Temp:</label>
+      <label id="tempEl"></label>
+      <label id="feelsLike">Feels Like:</label>
+      <label id="feelsLikeEl"></label>
+      <label id="humidity">Humidity:</label>
+      <label id="humidityEl"></label>
+      <label id="sunrise">Sunrise:</label>
+      <label id="sunriseEl"></label>
+      <label id="sunset">Sunset:</label>
+      <label id="sunsetEl"></label>
+      <label id="windSpeed">Wind Speed:</label>
+      <label id="windSpeedEl"></label>
+      <label id="latitude">Latitude:</label>
+      <label id="latitudeEl"></label>
+      <label id="longitude">Longitude:</label>
+      <label id="longitudeEl"></label>
+      <label id="timezone">Timezone:</label>
+      <label id="timezoneEl"></label>
+      <label id="offset">Timezone Offset:</label>
+      <label id="offsetEl"></label>
+      <label id="description">Description: </label>
+      <label id="descriptionEl"></label>
+    </main>
+    <div class="imageContainer">
+      <img id="weatherGiphy" />
+    </div>
+    <div class="loading">
+      <img id="loadImg" src="./load.gif" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
